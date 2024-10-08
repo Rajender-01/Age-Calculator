@@ -7,6 +7,12 @@ BirthDateInput?.setAttribute("max", today.toISOString().split("T")[0]);
 
 const calculateAge = () => {
   let inputElement = BirthDateInput as HTMLInputElement;
+
+  if (!inputElement.value && Result) {
+    Result.innerHTML = "Please enter your birth date.";
+    return;
+  }
+
   let BirthDate = new Date(inputElement.value);
 
   // Calculate the difference
