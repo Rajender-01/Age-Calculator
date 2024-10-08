@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <div class="age">
-        <div id="age__cont">
-            <h1>Age Calculator</h1>
-            <form onsubmit="return false;">
-                <label for="birthdate">Birthdate:</label>
-                <input type="date" id="birthdate" name="birthdate" max="" required>
-                <button type="button">Calculate Age</button>
-                <p id="result"></p>
+    <div class="age relative flex-center">
+        <div class="age__cont flex-col-center">
+            <h1 class="age__heading">Age Calculator</h1>
+            <form class="age__form flex-center neumorphism" onsubmit="return false;">
+                <input class="age__input" type="date" id="birthdate" name="birthdate" max="" required>
+                <button class="age__button" type="button">Calculate Age</button>
             </form>
+            <p id="result"></p>
         </div>
     </div>
 </body>
