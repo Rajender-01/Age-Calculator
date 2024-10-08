@@ -1,3 +1,6 @@
+import './scss/reset.scss';
+import './scss/ageCalculator.scss';
+
 let Button = document.querySelector("button");
 let Result = document.querySelector("#result");
 let BirthDateInput = document.querySelector("#birthdate");

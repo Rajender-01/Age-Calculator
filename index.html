@@ -1,21 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
 </head>
+
 <body>
-    <div id="app">
-        <h1>Age Calculator</h1>
-        <form onsubmit="return false;">
-            <label for="birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="birthdate" max="" required>
-            <button type="button">Calculate Age</button>
-            <p id="result"></p>
-        </form>
+    <div class="age">
+        <div id="age__cont">
+            <h1>Age Calculator</h1>
+            <form onsubmit="return false;">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" max="" required>
+                <button type="button">Calculate Age</button>
+                <p id="result"></p>
+            </form>
+        </div>
     </div>
 </body>
 <script type="module" src="/src/main.ts"></script>
+
 </html>
